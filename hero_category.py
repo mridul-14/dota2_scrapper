@@ -17,5 +17,5 @@ for url in urls:
     roles.update({category: heroes.copy()})
     heroes.clear()
 
-with open(r'C:\Users\91879\OneDrive\Desktop\Python\hero_category.json', 'w+') as file:
+with open(r'hero_category.json', 'w+') as file:
     json.dump(roles, file)
