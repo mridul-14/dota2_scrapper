@@ -1,7 +1,7 @@
 import json
 import csv
 
-with open(r'C:\Users\91879\OneDrive\Desktop\Python\dota_heroes728.json', 'r') as file:
+with open(r'dota_heroes728.json', 'r') as file:
     data = json.load(file)
 
 l = []
@@ -60,7 +60,7 @@ headers = [
 		"Gib type"
 	]
 
-with open(r'C:\Users\91879\OneDrive\Desktop\Python\out.csv', 'w+', encoding='utf-8') as file:
+with open(r'out.csv', 'w+', encoding='utf-8') as file:
     json_to_csv = csv.writer(file, delimiter=',', lineterminator='\n')
     json_to_csv.writerow(headers)
 
