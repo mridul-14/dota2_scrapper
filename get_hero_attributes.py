@@ -66,5 +66,5 @@ for index, _ in enumerate(soup.find_all('a')):
         hero_data.update({hero: l.copy()})
         l.clear()
 
-with open(r'C:\Users\91879\OneDrive\Desktop\Python\dota_heroes.json', 'w+') as file:
+with open(r'dota_heroes.json', 'w+') as file:
     json.dump(hero_data, file)
