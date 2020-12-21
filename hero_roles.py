@@ -18,5 +18,5 @@ for index, url in enumerate(urls):
     roles.update({category: heroes.copy()})
     heroes.clear()
 
-with open(r'C:\Users\91879\OneDrive\Desktop\Python\hero_roles.json', 'w+') as file:
+with open(r'hero_roles.json', 'w+') as file:
     json.dump(roles, file)
